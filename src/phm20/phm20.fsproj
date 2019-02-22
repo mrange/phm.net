@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <DefineConstants>PHM_TEST_BUILD</DefineConstants>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="PersistentHashMap.fsi" />
+    <Compile Include="PersistentHashMap.fs" />
+    <Compile Include="PersistentHashMapModule.fs" />
+  </ItemGroup>
+
+</Project>

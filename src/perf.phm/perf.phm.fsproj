@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <DefineConstants>PHM_TEST_BUILD</DefineConstants>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TieredCompilation>true</TieredCompilation>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\phm20\phm20.fsproj">
+      <Name>phm20.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\phm30\phm30.fsproj">
+      <Name>phm30.fsproj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\csphm30\csphm30.csproj">
+      <Name>phm30.fsproj</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Prime.fs" />
+    <Compile Include="CheckPerformance.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fsharpx.collections" Version="1.17.0" />
+    <PackageReference Include="Imms" Version="0.7.0.0" />
+    <PackageReference Include="Imms.FSharp" Version="0.7.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.5.0" />
+  </ItemGroup>
+</Project>
